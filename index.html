@@ -770,13 +770,13 @@ const QUESTIONS = {
     text: "Does the vehicle have safety triangles?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   3: {
     text: "Is the engine oil level on the dipstick at or below the low / add mark?",
     options: [
-      { answer: "Yes — Oil is LOW", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Yes — Oil is LOW", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "No — Oil is OK", message: null, result: "Pass" },
       { answer: "No — But getting low", message: "Fault has been recorded", result: "Minor Defect" }
     ]
@@ -784,7 +784,7 @@ const QUESTIONS = {
   4: {
     text: "Is the coolant level at or below the low / add mark?",
     options: [
-      { answer: "Yes — Coolant is LOW", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Yes — Coolant is LOW", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "No — OK", message: null, result: "Pass" },
       { answer: "No — But getting low", message: "Fault has been recorded", result: "Minor Defect" }
     ]
@@ -792,7 +792,7 @@ const QUESTIONS = {
   5: {
     text: "Is the power steering oil at or below the low / add mark?",
     options: [
-      { answer: "Yes — P/S Oil is LOW", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Yes — P/S Oil is LOW", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "No — OK", message: null, result: "Pass" },
       { answer: "No — But getting low", message: "Fault has been recorded", result: "Minor Defect" }
     ]
@@ -803,7 +803,7 @@ const QUESTIONS = {
       { answer: "Yes", message: null, result: "Pass" },
       { answer: "No — Empty", message: "Please fill the reservoir", result: "Pass" },
       { answer: "Minor Leak", message: "Fault has been recorded", result: "Minor Defect" },
-      { answer: "Major Leak", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "Major Leak", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   7: {
@@ -811,20 +811,20 @@ const QUESTIONS = {
     options: [
       { answer: "OK — No Leaks", message: null, result: "Pass" },
       { answer: "Minor Leak (excl. fuel)", message: "Fault has been recorded", result: "Minor Defect" },
-      { answer: "Major Leak (incl. fuel)", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "Major Leak (incl. fuel)", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   8: {
     text: "Are all belts and hoses intact?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   9: {
     text: "Turn the ignition key to the On position. Are there any warning lights or chimes that stay on?",
     options: [
-      { answer: "Yes — Warning lights ON", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Yes — Warning lights ON", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "No — All clear", message: null, result: "Pass" }
     ]
   },
@@ -832,36 +832,36 @@ const QUESTIONS = {
     text: "Are all gauges operational including brake failure indicators and pressure / vacuum gauges?",
     options: [
       { answer: "Yes — All operational", message: null, result: "Pass" },
-      { answer: "No — Gauge fault", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Gauge fault", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   11: {
     text: "Can you hear any unusual noises or vibrations?",
     options: [
       { answer: "No — All normal", message: null, result: "Pass" },
-      { answer: "Yes — Unusual noise", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "Yes — Unusual noise", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   12: {
     text: "Do headlights work on low and high beam?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   13: {
     text: "Is the horn, Maxi Brake Alarm and Reverse Alarm all working?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   14: {
     text: "Is the tarp operational and free from splits and tears?",
     options: [
       { answer: "Yes — OK", message: null, result: "Pass" },
-      { answer: "Not Working", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
-      { answer: "Major split / tear", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Not Working", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
+      { answer: "Major split / tear", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "Minor split / tear", message: "Fault has been recorded", result: "Minor Defect" }
     ]
   },
@@ -869,7 +869,7 @@ const QUESTIONS = {
     text: "Does the seatbelt engage correctly, and is the webbing free from any cuts or frays?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   16: {
@@ -883,14 +883,14 @@ const QUESTIONS = {
     text: "Are drivers and passengers windows operational?",
     options: [
       { answer: "Yes — Operational", message: null, result: "Pass" },
-      { answer: "No — Not working", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Not working", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   18: {
     text: "Are there any cracks or chips on the windscreen?",
     options: [
       { answer: "OK — No damage", message: null, result: "Pass" },
-      { answer: "Major crack or chip in driver's view", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Major crack or chip in driver's view", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "Minor crack or chip outside driver's view", message: "Fault has been recorded", result: "Minor Defect" }
     ]
   },
@@ -898,14 +898,14 @@ const QUESTIONS = {
     text: "Check Wipers and Washers",
     options: [
       { answer: "OK", message: null, result: "Pass" },
-      { answer: "Wipers / Washers not operational", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Wipers / Washers not operational", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "Wipers leave minor marks", message: "Fault has been recorded", result: "Minor Defect" }
     ]
   },
   20: {
     text: "Do any of the tyres have visible bulging, splits or missing tread? Or are any of the tyres less than 1.5mm of tread?",
     options: [
-      { answer: "Yes — Tyre fault found", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Yes — Tyre fault found", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "No — All tyres OK", message: null, result: "Pass" }
     ]
   },
@@ -913,14 +913,14 @@ const QUESTIONS = {
     text: "Are all wheel nuts present? Or are there any rust marks on the wheel from the studs that indicate loose wheel nuts?",
     options: [
       { answer: "Yes — All present, no rust", message: null, result: "Pass" },
-      { answer: "No — Missing or rust marks", message: "Do Not operate vehicle, tag out immediately, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Missing or rust marks", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   22: {
     text: "Are all wheel nut indicators lined up?",
     options: [
       { answer: "Yes — Lined up", message: null, result: "Pass" },
-      { answer: "No — Not aligned", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Not aligned", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   23: {
@@ -934,21 +934,21 @@ const QUESTIONS = {
     text: "Are taillights and indicators working?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   25: {
     text: "Are all clearance lights fitted and working?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   26: {
     text: "Are all lenses and reflectors fitted and undamaged?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "Missing", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" },
+      { answer: "Missing", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" },
       { answer: "Broken or minor damage", message: "Fault has been recorded", result: "Minor Defect" }
     ]
   },
@@ -956,14 +956,14 @@ const QUESTIONS = {
     text: "Is the body of the vehicle intact? No visible sign of structural damage or loose components?",
     options: [
       { answer: "Yes — All OK", message: null, result: "Pass" },
-      { answer: "No — Damage found", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Damage found", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   28: {
     text: "As you walk around, listen for air leaks. Can you hear any air leaks?",
     options: [
       { answer: "No — No leaks", message: null, result: "Pass" },
-      { answer: "Yes — Air leak heard", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "Yes — Air leak heard", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   29: {
@@ -971,7 +971,7 @@ const QUESTIONS = {
     options: [
       { answer: "Yes — Secure", message: null, result: "Pass" },
       { answer: "Yes — But loose", message: "Please tighten the cap", result: "Pass" },
-      { answer: "No — Cap missing", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Cap missing", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   30: {
@@ -987,7 +987,7 @@ const QUESTIONS = {
     options: [
       { answer: "Yes — Square & engaged", message: null, result: "Pass" },
       { answer: "Slightly off square — tongues well engaged", message: "Fault has been recorded", result: "Minor Defect" },
-      { answer: "Major twist or tongues not engaged", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "Major twist or tongues not engaged", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   32: {
@@ -1001,7 +1001,7 @@ const QUESTIONS = {
     text: "Does the ringfeder housing show any signs of damage or deformation?",
     options: [
       { answer: "No — OK", message: null, result: "Pass" },
-      { answer: "Yes — Damage found", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "Yes — Damage found", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   34: {
@@ -1015,28 +1015,28 @@ const QUESTIONS = {
     text: "Is the horn working?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   36: {
     text: "Do Maxi Brakes hold the vehicle from any movement?",
     options: [
       { answer: "Yes — Hold firm", message: null, result: "Pass" },
-      { answer: "No — Vehicle moves", message: "Do Not operate vehicle, tag out immediately, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Vehicle moves", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   37: {
     text: "Does the foot brake operate and bring the vehicle to a stop?",
     options: [
       { answer: "Yes", message: null, result: "Pass" },
-      { answer: "No", message: "Do Not operate vehicle, tag out immediately, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No", message: "Do not operate this vehicle. Continue with remainder of inspection and then report to your supervisor", result: "Major Defect" }
     ]
   },
   38: {
     text: "Is the vehicle safe to drive to the limits of this checklist?",
     options: [
       { answer: "Yes — Safe to operate", message: null, result: "Pass" },
-      { answer: "No — Not safe", message: "Do Not operate vehicle, report to supervisor and complete a Repair Request", result: "Major Defect" }
+      { answer: "No — Not safe", message: "Do not operate this vehicle. Generate the fault report and then notify your supervisor", result: "Major Defect" }
     ]
   },
   39: {
@@ -1218,12 +1218,17 @@ function updateStats() {
     b.style.maxHeight = b.scrollHeight + 500 + "px";
   });
 
-  // Update submit button
+  // Update submit button — enable immediately if major defects exist, otherwise require all 39
   const btn = document.getElementById("submit-btn");
-  if (done >= 39) {
+  const hasMajor = Object.values(answers).some(a => a.rc === "major");
+  if (done >= 39 || hasMajor) {
     btn.className = "submit-btn ready";
+    btn.textContent = hasMajor && done < 39
+      ? "⚠️ Generate Fault Report (" + done + "/39 answered)"
+      : "Generate Inspection Report";
   } else {
     btn.className = "submit-btn disabled";
+    btn.textContent = "Generate Inspection Report";
   }
 
   checkQ38AutoLock();
@@ -1273,23 +1278,32 @@ function checkQ38AutoLock() {
 }
 
 function submitInspection() {
-  const done = Object.keys(answers).length;
   const unanswered = [];
   for (let i = 1; i <= 39; i++) {
     if (!answers[i]) unanswered.push(i);
   }
 
+  const hasMajor = Object.values(answers).some(a => a.rc === "major");
+  const warn = document.getElementById("unanswered-warn");
+
+  // If major defects exist, allow report generation but show a note about unanswered questions
+  if (hasMajor && unanswered.length > 0) {
+    warn.textContent = `⚠️ Note: ${unanswered.length} question(s) not yet answered (Q${unanswered.join(", Q")}) — included in report as unanswered.`;
+    warn.classList.add("show");
+    showReport();
+    return;
+  }
+
+  // No major defects — require all questions answered
   if (unanswered.length > 0) {
-    const warn = document.getElementById("unanswered-warn");
     warn.textContent = `⚠️ ${unanswered.length} question(s) still need an answer: Q${unanswered.join(", Q")}`;
     warn.classList.add("show");
-    // scroll to first unanswered
     const el = document.getElementById("q-card-" + unanswered[0]);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
 
-  document.getElementById("unanswered-warn").classList.remove("show");
+  warn.classList.remove("show");
   showReport();
 }
 
